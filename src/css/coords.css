@@ -1,0 +1,358 @@
+.generar {
+  background: #f3f3f3;
+}
+
+.generar .titulo {
+  color: white;
+  background: #133255;
+  padding: 0.4em 0.8em;
+}
+
+.generar .elemento {
+  margin: 1em;
+  -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.068);
+          box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.068);
+}
+
+@media (max-width: 750px) {
+  .generar .elemento {
+    margin: 0.5em;
+  }
+}
+
+.generar .elemento .content {
+  padding: 1em;
+  background: white;
+}
+
+.generar .mapa {
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.generar .mapa #map-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #072577;
+}
+
+.generar .mapa #map-container .googleCuadro {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  text-align: center;
+  color: #122541;
+  padding: 0.3em 1em;
+}
+
+.generar .mapa button.desh {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5em 0.9em;
+  background: #0084ff;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+
+.generar .mapa button.desh:hover {
+  background: #0070da;
+}
+
+.generar .mapa button.desh:not(:last-child) {
+  margin-right: 1em;
+}
+
+.generar .controles textarea {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+}
+
+.generar .controles textarea,
+.generar .controles input:not([type="color"]) {
+  font-family: "Poppins", sans-serif;
+  padding: 0.4em;
+  background: none;
+  border: 1.5px solid grey;
+  outline: none;
+}
+
+.generar .controles input[type="color"] {
+  background: none;
+  border: 1.5px solid grey;
+  margin-left: 1em;
+}
+
+.generar .controles label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.generar .controles .acciones button {
+  font-family: "Poppins", sans-serif;
+  padding: 0.5em 0.9em;
+  background: #0084ff;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.285);
+  color: white;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+
+.generar .controles .acciones button:hover {
+  background: #0070da;
+}
+
+.generar .controles .acciones button:not(:last-child) {
+  margin-right: 1em;
+}
+
+.generar .controles .acciones .save_err {
+  margin-top: 1em;
+  padding: 0.8em;
+  background: #ffc5c5;
+  color: #5a0101;
+  border: 1px solid #970000;
+  display: block;
+  width: auto;
+  font-size: 0.95em;
+}
+
+.generar .poligonos textarea {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+  font-family: "Poppins", sans-serif;
+  padding: 0.4em;
+  background: none;
+  border: 1.5px solid grey;
+  outline: none;
+}
+
+.generar .poligonos .botones {
+  margin-top: 2em;
+}
+
+.generar .poligonos .botones h2 {
+  font-weight: lighter;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  color: white;
+  background: #133255;
+  padding: 0.4em 0.8em;
+  margin: 0 -1em;
+  margin-top: 0.5em;
+}
+
+.generar .poligonos .botones .poligono {
+  color: white;
+  display: inline-block;
+  padding: 0.5em 0.9em;
+  cursor: pointer;
+  opacity: 0.8;
+  position: relative;
+  margin-top: 0.5em;
+}
+
+.generar .poligonos .botones .poligono:not(:last-child) {
+  margin-right: 1em;
+}
+
+.generar .poligonos .botones .poligono:after {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-90%);
+          transform: translateX(-50%) translateY(-90%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 0.4em 0.6em;
+  background: #181818;
+  border-radius: 3px;
+  white-space: nowrap;
+  font-size: 0.8em;
+  display: none;
+}
+
+.generar .poligonos .botones .poligono:before {
+  content: "";
+  background: #181818;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-7px) rotate(45deg);
+          transform: translateX(-50%) translateY(-7px) rotate(45deg);
+  display: none;
+}
+
+.generar .poligonos .botones .poligono:hover {
+  opacity: 1;
+}
+
+.generar .poligonos .botones .poligono:hover:after, .generar .poligonos .botones .poligono:hover:before {
+  display: block;
+}
+
+.generar .poligonos .succ {
+  padding: 0.5em 0.9em;
+  background: #0084ff;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.285);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 1em;
+}
+
+.generar .poligonos .succ:hover {
+  background: #0070da;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0.3;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0.3;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.generar .poligonos span {
+  font-size: 0.9em;
+  color: #0090d3;
+  -webkit-animation: aparecer 5s ease;
+          animation: aparecer 5s ease;
+}
+
+.generar .poligonos span i {
+  font-size: 1.4em;
+  margin-left: 0.5em;
+}
+
+.generar .poligonos small {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.generar .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.637);
+}
+
+.generar .modal .contenedor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: white;
+  min-width: 340px;
+  max-width: 100%;
+  min-height: auto;
+}
+
+@media (max-width: 600px) {
+  .generar .modal .contenedor {
+    text-align: center;
+  }
+}
+
+.generar .modal .contenedor small {
+  display: block;
+  margin: 0.5em 0;
+}
+
+.generar .modal .contenedor i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.generar .modal .contenedor .contenido {
+  padding: 0.5em;
+}
+
+.generar .modal .contenedor .contenido textarea {
+  display: block;
+  height: 200px;
+  max-width: 100%;
+  resize: none;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 0.4em;
+  background: none;
+  border: 1.5px solid grey;
+  outline: none;
+}
+
+.generar .modal .contenedor .contenido button {
+  font-family: "Poppins", sans-serif;
+  padding: 0.5em 0.9em;
+  background: #0084ff;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.285);
+  color: white;
+  cursor: pointer;
+}
+
+.generar .modal .contenedor .contenido button:hover {
+  background: #0070da;
+}
+
+.generar .modal .contenedor .contenido button:not(:last-child) {
+  margin-right: 1em;
+}
+
+.generar .modal .contenedor .contenido p {
+  margin: 1em auto;
+  padding: 0.8em;
+  background: #ffc2c2;
+  color: #5a0101;
+  border: 1px solid #970000;
+  display: block;
+  width: auto;
+  font-size: 0.95em;
+}
+/*# sourceMappingURL=coords.css.map */

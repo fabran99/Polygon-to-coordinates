@@ -1,0 +1,32 @@
+[
+  {
+    "featureType": "administrative.country",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#466380"
+      },
+      {
+        "visibility": "on"
+      },
+      {
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.province",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#466380"
+      },
+      {
+        "visibility": "on"
+      },
+      {
+        "weight": 5.5
+      }
+    ]
+  }
+]
