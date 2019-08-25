@@ -7,9 +7,11 @@ I added some functionalities, like add multiple polygons, undo, download as json
 
 ## Simple guide
 
-Just draw the polygon, se the name and color and press Save button. That will add the polygon to the JSON.
-Once you save one polygon, it will get fixed to its current form, so you have to press edit below if you want to make any changes.
-Whenever you save a polygon, another one appears in the center of the screen, this one is not added to the JSON if you don´t save it. Probably in next versions I will add and Add polygon functionality instead of doing it automaticaly when the user saves.
+Just draw the polygon, set the name and color and press Save button. That will add the polygon to the JSON.
+Once you save one polygon, it will get uneditable, so you have to press edit below if you want to make any changes.
+
+Whenever you save a polygon, another one appears in the center of the screen, this one is not added to the JSON until you save it. 
+Probably in next versions I will add and Add polygon functionality instead of doing it automaticaly when the user saves.
 
 Pressing CTRL + Z undo the last change.
 Reset polygon button sets the polygon to a rectangle in the center of the screen.
