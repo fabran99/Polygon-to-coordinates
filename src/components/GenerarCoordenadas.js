@@ -747,8 +747,8 @@ export class GenerarCoordenadas extends Component {
               <textarea value={texto} readOnly />
             </label>
             <div className="acciones">
-              <button onClick={this.savePoly}>Save</button>
-              <button onClick={this.resetPoly}>Reset poligon</button>
+              <button onClick={this.savePoly}>Save current polygon</button>
+              <button onClick={this.resetPoly}>Reset polygon</button>
               <button onClick={this.toggle.bind(this, "cargar_json_visible")}>
                 Load JSON
               </button>
