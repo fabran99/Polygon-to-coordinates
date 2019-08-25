@@ -7,7 +7,9 @@
   }
 
   .elemento {
-    margin: 1em;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin: 1em auto;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.068);
     @media (max-width: 750px) {
       margin: 0.5em;
